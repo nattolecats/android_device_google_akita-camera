@@ -1,0 +1,18 @@
+//
+// Copyright (C) 2024 The 2by2 Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+sh_binary {
+    name: "camera_patch.sh",
+    src: "bin/camera_patch.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "camera_patch.rc",
+    src: "etc/camera_patch.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}

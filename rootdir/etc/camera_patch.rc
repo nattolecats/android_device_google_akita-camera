@@ -1,0 +1,13 @@
+#
+#  Copyright (C) 2024 The 2by2 Project
+#
+#  SPDX-License-Identifier: Apache-2.0
+#
+
+on init
+    start vendor-camera-patch-sh
+
+service vendor-camera-patch-sh /vendor/bin/camera_patch.sh
+    user root
+    disabled
+    oneshot
