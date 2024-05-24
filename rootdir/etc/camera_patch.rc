@@ -4,7 +4,7 @@
 #  SPDX-License-Identifier: Apache-2.0
 #
 
-on init
+on boot
     start vendor-camera-patch-sh
 
 service vendor-camera-patch-sh /vendor/bin/camera_patch.sh
