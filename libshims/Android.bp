@@ -1,0 +1,15 @@
+//
+// Copyright (C) 2024 The 2by2 Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libshim_pixel_camera",
+    srcs: ["libshim_pixel_camera.c"],
+
+    // Always build out under /system partition
+    vendor: false,
+    system_ext_specific: false,
+    product_specific: false,
+}

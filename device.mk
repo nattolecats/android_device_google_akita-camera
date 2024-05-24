@@ -12,3 +12,7 @@ PRODUCT_PACKAGES += \
 # Prebuilts
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/google/akita-camera/apex_overlay/,$(TARGET_COPY_OUT_VENDOR)/apex_overlay/)
+
+# Shim
+PRODUCT_PACKAGES += \
+    libshim_pixel_camera
