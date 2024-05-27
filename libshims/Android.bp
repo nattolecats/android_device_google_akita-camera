@@ -5,8 +5,8 @@
 //
 
 cc_library_shared {
-    name: "libshim_pixel_camera",
-    srcs: ["libshim_pixel_camera.c"],
+    name: "libshim_camera",
+    srcs: ["libshim_camera.c"],
 
     // Always build out under /system partition
     vendor: false,
