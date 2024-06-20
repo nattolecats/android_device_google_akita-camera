@@ -16,3 +16,6 @@ PRODUCT_COPY_FILES += \
 # Shim
 PRODUCT_PACKAGES += \
     libshim_pixel_camera
+
+# SEPolicy
+BOARD_SEPOLICY_DIRS += device/google/akita-camera/sepolicy

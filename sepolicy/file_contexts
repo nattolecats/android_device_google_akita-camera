@@ -1,0 +1,5 @@
+# Script
+/vendor/bin/camera_patch\.sh                                                                  u:object_r:camera_patch_sh_exec:s0
+
+# 
+/vendor/apex_overlay/com\.google\.pixel\.camera\.hal/(.*)                                     u:object_r:camera_apex_overlay_file:s0

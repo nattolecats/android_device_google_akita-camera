@@ -1,0 +1,11 @@
+type camera_patch_sh, domain;
+type camera_patch_sh_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(camera_patch_sh)
+
+allow camera_patch_sh self:capability sys_admin;
+allow camera_patch_sh vendor_shell_exec:file rx_file_perms;
+allow camera_patch_sh vendor_toolbox_exec:file rx_file_perms;
+
+allow camera_patch_sh hal_camera_default_exec:file mounton;
+allow camera_patch_sh camera_apex_overlay_file:file r_file_perms;
